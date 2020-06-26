@@ -1,0 +1,326 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bdemirer.boun"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml
+10
+11    <!-- Permissions -->
+12
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:47:5-67
+13-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:47:22-64
+14    <!-- Camera, Photos, input file -->
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:49:5-79
+15-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:49:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:50:5-81
+16-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:50:22-78
+17    <!-- Geolocation API -->
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:52:5-81
+18-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:52:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:53:5-79
+19-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:53:22-76
+20
+21    <uses-feature android:name="android.hardware.location.gps" />
+21-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:54:5-66
+21-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:54:19-63
+22    <!-- Network API -->
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:56:5-79
+23-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:56:22-76
+24    <!-- Navigator.getUserMedia -->
+25    <!-- Video -->
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:59:5-65
+26-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:59:22-62
+27    <!-- Audio -->
+28    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+28-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:61:5-71
+28-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:61:22-68
+29    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+29-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:62:5-79
+29-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:62:22-77
+30
+31    <uses-feature
+31-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
+32        android:name="android.hardware.camera"
+32-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-47
+33        android:required="false" />
+33-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
+34
+35    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+35-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:5-68
+35-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:22-65
+36    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+36-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:5-82
+36-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:22-79
+37
+38    <application
+38-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:5:5-43:19
+39        android:allowBackup="true"
+39-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:6:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/cf23515831a30cf8e0e5ff774beb1451/core-1.2.0/AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@mipmap/ic_launcher"
+42-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:7:9-43
+43        android:label="@string/app_name"
+43-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:8:9-41
+44        android:roundIcon="@mipmap/ic_launcher_round"
+44-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:9:9-54
+45        android:supportsRtl="true"
+45-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:10:9-35
+46        android:testOnly="true"
+47        android:theme="@style/AppTheme"
+47-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:11:9-40
+48        android:usesCleartextTraffic="true" >
+48-->[:capacitor-cordova-android-plugins] /Users/mac/boun/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:18-53
+49        <activity
+49-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:13:9-32:20
+50            android:name="com.bdemirer.boun.MainActivity"
+50-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:15:13-58
+51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+51-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:14:13-129
+52            android:label="@string/title_activity_main"
+52-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:16:13-56
+53            android:launchMode="singleTask"
+53-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:18:13-44
+54            android:theme="@style/AppTheme.NoActionBarLaunch" >
+54-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:17:13-62
+55            <intent-filter>
+55-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:20:13-23:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:21:17-69
+56-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:21:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:22:17-77
+58-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:22:27-74
+59            </intent-filter>
+60            <intent-filter>
+60-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:25:13-30:29
+61                <action android:name="android.intent.action.VIEW" />
+61-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:26:17-69
+61-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:26:25-66
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:27:17-76
+63-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:27:27-73
+64                <category android:name="android.intent.category.BROWSABLE" />
+64-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:28:17-78
+64-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:28:27-75
+65
+66                <data android:scheme="@string/custom_url_scheme" />
+66-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:29:17-68
+66-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:29:23-65
+67            </intent-filter>
+68        </activity>
+69
+70        <provider
+71            android:name="androidx.core.content.FileProvider"
+71-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:35:13-62
+72            android:authorities="com.bdemirer.boun.fileprovider"
+72-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:36:13-64
+73            android:exported="false"
+73-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:37:13-37
+74            android:grantUriPermissions="true" >
+74-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:38:13-47
+75            <meta-data
+75-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:39:13-41:64
+76                android:name="android.support.FILE_PROVIDER_PATHS"
+76-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:40:17-67
+77                android:resource="@xml/file_paths" />
+77-->/Users/mac/boun/android/app/src/main/AndroidManifest.xml:41:17-51
+78        </provider>
+79
+80        <service
+80-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+81            android:name="com.getcapacitor.plugin.background.BackgroundTaskService"
+81-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-84
+82            android:exported="false" />
+82-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+83
+84        <receiver android:name="com.getcapacitor.plugin.notification.TimedNotificationPublisher" />
+84-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-100
+84-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:19-97
+85        <receiver android:name="com.getcapacitor.plugin.notification.NotificationDismissReceiver" />
+85-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-101
+85-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-98
+86
+87        <meta-data
+87-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:37
+88            android:name="firebase_messaging_auto_init_enabled"
+88-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-64
+89            android:value="false" />
+89-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-34
+90
+91        <service
+91-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-33:19
+92            android:name="com.getcapacitor.CapacitorFirebaseMessagingService"
+92-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-78
+93            android:stopWithTask="false" >
+93-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-41
+94            <intent-filter>
+94-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+95                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+95-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+95-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+96            </intent-filter>
+97        </service>
+98
+99        <activity
+99-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:24:9-31:50
+100            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+100-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:25:13-85
+101            android:excludeFromRecents="true"
+101-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:26:13-46
+102            android:exported="true"
+102-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:27:13-36
+103            android:launchMode="singleTask"
+103-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:28:13-44
+104            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+104-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:29:13-102
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+105-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:30:13-72
+106
+107        <service
+107-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:33:9-39:19
+108            android:name="com.google.firebase.components.ComponentDiscoveryService"
+108-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:34:13-84
+109            android:directBootAware="true"
+109-->[com.google.firebase:firebase-common:19.3.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+110            android:exported="false" >
+110-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:35:13-37
+111            <meta-data
+111-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:36:13-38:85
+112                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+112-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:37:17-109
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-auth:19.3.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/2b2e36951001ebbf6721ed1a092f647b/jetified-firebase-auth-19.3.1/AndroidManifest.xml:38:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-messaging:20.1.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:38:13-40:85
+115                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+115-->[com.google.firebase:firebase-messaging:20.1.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:39:17-119
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-messaging:20.1.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:40:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:32:13-34:85
+118                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+118-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:33:17-96
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:34:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+121                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+121-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/mac/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-installations:16.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:17:13-19:85
+124                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+124-->[com.google.firebase:firebase-installations:16.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:18:17-127
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-installations:16.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:19:17-82
+126        </service>
+127        <!--
+128             FirebaseMessagingService performs security checks at runtime,
+129             but set to not exported to explicitly avoid allowing another app to call it.
+130        -->
+131        <service
+131-->[com.google.firebase:firebase-messaging:20.1.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:28:9-34:19
+132            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+132-->[com.google.firebase:firebase-messaging:20.1.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:29:13-82
+133            android:exported="false" >
+133-->[com.google.firebase:firebase-messaging:20.1.2] /Users/mac/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:30:13-37
+134            <intent-filter android:priority="-500" >
+134-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+135                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+135-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+135-->[:capacitor-android] /Users/mac/boun/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+136            </intent-filter>
+137        </service>
+138
+139        <receiver
+139-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:37:9-44:20
+140            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+140-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:38:13-78
+141            android:exported="true"
+141-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:39:13-36
+142            android:permission="com.google.android.c2dm.permission.SEND" >
+142-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:40:13-73
+143            <intent-filter>
+143-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:41:13-43:29
+144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+144-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:17-81
+144-->[com.google.firebase:firebase-iid:20.1.1] /Users/mac/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:25-78
+145            </intent-filter>
+146        </receiver>
+147
+148        <activity
+148-->[com.google.android.gms:play-services-base:17.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d515fa0142795af05e3369fe0848cba8/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+149            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+149-->[com.google.android.gms:play-services-base:17.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d515fa0142795af05e3369fe0848cba8/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-base:17.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d515fa0142795af05e3369fe0848cba8/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+151-->[com.google.android.gms:play-services-base:17.1.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/d515fa0142795af05e3369fe0848cba8/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+152
+153        <provider
+153-->[com.google.firebase:firebase-common:19.3.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+154            android:name="com.google.firebase.provider.FirebaseInitProvider"
+154-->[com.google.firebase:firebase-common:19.3.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+155            android:authorities="com.bdemirer.boun.firebaseinitprovider"
+155-->[com.google.firebase:firebase-common:19.3.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+156            android:exported="false"
+156-->[com.google.firebase:firebase-common:19.3.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+157            android:initOrder="100" />
+157-->[com.google.firebase:firebase-common:19.3.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+158
+159        <meta-data
+159-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/f720b24cc490c109d50c0a0a1e6bf186/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+160            android:name="com.google.android.gms.version"
+160-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/f720b24cc490c109d50c0a0a1e6bf186/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+161            android:value="@integer/google_play_services_version" />
+161-->[com.google.android.gms:play-services-basement:17.0.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/f720b24cc490c109d50c0a0a1e6bf186/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+162
+163        <service
+163-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+164            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+164-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+165            android:exported="false" >
+165-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+166            <meta-data
+166-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+167                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+167-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+168                android:value="cct" />
+168-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+169        </service>
+170        <service
+170-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+171            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+171-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+172            android:exported="false"
+172-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+173            android:permission="android.permission.BIND_JOB_SERVICE" >
+173-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+174        </service>
+175
+176        <receiver
+176-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+177            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+177-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+178            android:exported="false" />
+178-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/mac/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+179    </application>
+180
+181</manifest>
