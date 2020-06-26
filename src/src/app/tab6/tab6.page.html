@@ -1,0 +1,42 @@
+<ion-header translucent no-border>
+  <ion-toolbar>
+    <ion-button slot="start" fill="clear" size="small">
+      <ion-menu-button ></ion-menu-button>
+    </ion-button>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" slot="fixed" >
+
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+         <img class="btn" [src]="photo" alt="" >
+       </div>
+    </div>
+  </div>
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <br><br><br><br>
+
+  <div class="card-body">
+    <div class="user-meta ion-text-center">
+      <h3 class="playername">Kerem Dogan</h3>
+      <h5 class="country">Computer Education Technologies</h5>
+
+      <h6 class="ranking">Total Upload/Post: <ion-chip>
+        <ion-label>4</ion-label>
+        </ion-chip>
+      </h6>
+      
+    <br>
+    </div>
+    <ion-button expand="full" color="dark">Email Address: kerem@boun.edu.tr</ion-button>
+    <br>
+    <ion-button expand="full" color="primary">Edit Your Profile</ion-button>
+  </div>
+</ion-content>

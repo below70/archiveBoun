@@ -1,0 +1,34 @@
+.card3{
+    padding-bottom: 10%;
+}
+
+.out {
+
+    height: 32px;
+    width: 32px;
+}
+.logOut {
+    padding-left: 5%;
+    padding-top: 3%;
+}
+.anaSayfa{
+    text-align: center;
+    font-size: large;
+}
+.head {
+    text-align: center;
+    padding-top: 25%;
+}
+
+ion-toolbar{
+    
+    --color:  #f65152;
+  }
+  ion-title{ 
+    font-family: monospace;
+    font-size: xx-large;
+  }
+  ion-card {
+    border-style: solid ;
+    border-color: red;
+  }

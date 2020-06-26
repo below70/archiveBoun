@@ -1,0 +1,65 @@
+ion-content {
+    --background: url("https://i2.wp.com/www.amfiweb.net/wp-content/uploads/2019/10/bo%C4%9Fazi%C3%A7i.jpg?fit=1024%2C679&ssl=1") no-repeat top center/cover fixed, #fff;
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.btn{
+    margin: 0px auto;
+    width: 160px;
+    height: 160px;
+    bottom: calc(-1*(100% + 5%));
+    display: block;
+    border-radius: 44% ;
+    border: solid 5px ;
+    position: absolute;
+   
+    
+    background-color: #fff;
+}
+
+ion-toolbar {
+    --background: transparent;
+}
+
+.card {
+    margin: 0 auto;
+
+    .header {
+        height: 200px;
+
+        .avatar {
+            width: 160px;
+            height: 160px;
+            position: relative;
+            margin: 0 auto;
+
+           
+        }
+    }
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 30px;
+    height: calc(100vh - (200px + 56px));
+    overflow: hidden;
+
+    .user-meta {
+        padding-top: 40px;
+
+        .playername {
+            font-size: 24px;
+            font-weight: 600;
+            color: #303940;
+        }
+
+        .country {
+            font-size: 90%;
+            color: #949ea6;
+            text-transform: uppercase;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,141 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-button slot="start" fill="clear" size="small">
+      <ion-menu-button ></ion-menu-button>
+    </ion-button>
+    <ion-title>Discuss</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+  
+  <ion-content>
+
+    
+    <ion-card>
+  
+      <ion-card-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img class="pp" src="https://www.sacintarzin.com/sites/default/files/styles/article_slider/public/media/2016/07/robert-downey-jr-hairstyle.jpg?itok=YqAAB4av">
+          </ion-avatar>
+            <ion-label>Kerem Doğan</ion-label>
+        </ion-item>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <p>
+        MATH201 ödevindeki SAS ile alakalı 4. soruyu yaptım. 
+        çözemeyen arkadaşlar için paylaşmak istedim :)) Kolay gelsin!
+        </p>
+        <br>
+        
+        <ion-slides [options]="sliderOpts" zoom>
+          <ion-slide>
+            <div class="swiper-zoom-container">
+              <img src="./assets/images/soln.jpeg">
+            </div>
+          </ion-slide>  
+        </ion-slides>
+
+      <table>
+        <tr>
+          <th><ion-button  color="dark" fill="clear" class="button" slot="start"><ion-icon class="click" name="thumbs-up-outline"></ion-icon>
+            {{LikeValue}}</ion-button></th>
+          <th class="comment"><ion-icon class="click" name="chatbubble-outline"></ion-icon></th> 
+          <th class="date"><ion-label>14:04 || 18.05.20</ion-label></th>
+        </tr>
+      </table>
+      </ion-card-content>
+    </ion-card>
+
+ 
+    <ion-card >
+  
+      <ion-card-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img class="pp" src="https://playtusu.com/wp-content/uploads/2020/01/evanss.jpg">
+          </ion-avatar>
+          <ion-label>Bilal Demirer</ion-label>
+        </ion-item>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <p>
+        Dün yapılan PHYS101 quizindeki 2. sorunun yaptım¸.
+        Sınavda benzeri bir soru çıkabilirmiş˛. Sevgili arkadaşlarıma duyurulur!
+        </p>
+        <br>
+       
+        <ion-slides [options]="sliderOpts" zoom>
+          <ion-slide>
+            <div class="swiper-zoom-container">
+              <img src="./assets/images/soln1.jpeg">
+            </div>
+          </ion-slide>  
+        </ion-slides>
+       
+      <hr>
+      <table>
+        <tr>
+          <th><ion-button  color="dark" fill="clear" class="button" slot="start"><ion-icon class="click" name="thumbs-up-outline"></ion-icon>
+            {{LikeValue}}</ion-button></th>
+          <th class="comment"><ion-icon class="click" name="chatbubble-outline"></ion-icon></th> 
+          <th class="date"><ion-label>09:16 || 18.05.20</ion-label></th>
+        </tr>
+      </table>
+      </ion-card-content>
+    </ion-card>
+
+     <!--  ion-fab  -->
+    <ion-fab vertical="end"  horizontal="end" slot="fixed">
+      <ion-fab-button color="danger">
+      <ion-icon  name="create"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  
+  
+  
+    <ion-card>
+  
+      <ion-card-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img class="pp" src="https://static.arageek.com/wp-content/uploads/2019/07/db633e0f28a164551cd5ff4d807547a8.jpg">
+          </ion-avatar>
+          <ion-label>Zeynep Öztürk</ion-label>
+        </ion-item>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <p>
+        Hocamızın integral Uygulamaları ders notlarında yazan son soruyu çözdüm. 
+        Kolay gelsin herkese!
+        </p>
+        <br>
+       
+        <ion-slides [options]="sliderOpts" zoom>
+          <ion-slide>
+            <div class="swiper-zoom-container">
+              <img src="./assets/images/soln2.jpeg">
+            </div>
+          </ion-slide>  
+        </ion-slides>
+       
+        <hr>
+      <table>
+        <tr>
+          <th><ion-button  color="dark" fill="clear" class="button" slot="start"><ion-icon class="click" name="thumbs-up-outline"></ion-icon>
+            {{LikeValue}}</ion-button></th>
+          <th class="comment"><ion-icon class="click" name="chatbubble-outline"></ion-icon></th> 
+          <th class="date"><ion-label>22:24 || 17.05.20</ion-label></th>
+        </tr>
+      </table>
+      </ion-card-content>
+    </ion-card>
+
+  
+  </ion-content>
+
+  

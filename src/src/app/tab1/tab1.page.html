@@ -1,0 +1,44 @@
+  
+<ion-header >
+  <ion-toolbar  >
+	  <ion-title>Register</ion-title>
+	</ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+
+	<ion-grid>
+		<ion-row >
+			<ion-col >	
+
+	
+
+    <img class="logo"  src="./assets/images/school.svg"/>
+	  <ion-list>
+  
+		  <ion-item>
+			<ion-label position="floating">Username</ion-label>
+			<ion-input type="text" placeholder="username@boun.edu.tr" color="primary" [(ngModel)]="username"></ion-input>
+		  </ion-item>
+		
+		  <ion-item>
+			<ion-label position="floating">Password</ion-label>
+			<ion-input type="password" placeholder="******" [(ngModel)]="password"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+			<ion-label position="floating">Confirm Password</ion-label>
+			<ion-input type="password"placeholder="******" [(ngModel)]="cpassword"></ion-input>
+      </ion-item>
+      
+      <ion-item lines='none'>
+        Already have an account? <a routerLink='/tab2'>Sign in.</a>
+        </ion-item>
+		
+		</ion-list>
+  
+		<ion-button fill="solid" expand="block"  (click)="register()">Signup</ion-button>
+	   </ion-col>
+	  </ion-row>
+	  </ion-grid>
+	</ion-content>
