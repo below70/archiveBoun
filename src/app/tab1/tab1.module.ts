@@ -6,6 +6,14 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: Tab1Page
+  }
+];
 
 @NgModule({
   imports: [
